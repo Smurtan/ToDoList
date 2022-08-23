@@ -1,4 +1,4 @@
-class Viewing:
+class ToDoList:
     def __init__(self):
         self.indent = ' ' * 4  # setting up the indentation
         self.gap = None  # to store the last deleted task
@@ -37,7 +37,7 @@ if __name__ == '__main__':
           '- If you want to delete a task, enter "-" indicating the number of the task you want to get rid of.\n'
           '- To see the entire task list, type "w"(watch).\n'
           '- To exit, enter "e"(exit).')
-    user = Viewing()  # A copy of the to-do list
+    user = ToDoList()  # A copy of the to-do list
     user.__str__()  # viewing existing tasks
     try:
         while True:  # Program cycle
